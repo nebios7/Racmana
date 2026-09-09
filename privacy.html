@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confidentialité — Racmana</title>
+<meta name="description" content="Politique de confidentialité de l'application Racmana.">
+<style>
+  :root{
+    --bg:#ffffff;
+    --text:#1d1d1f;
+    --muted:#6e6e73;
+    --accent:#0071e3;
+    --divider:#d2d2d7;
+    --surface:#f5f5f7;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#000000;
+      --text:#f5f5f7;
+      --muted:#a1a1a6;
+      --accent:#2997ff;
+      --divider:#424245;
+      --surface:#1c1c1e;
+    }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  nav{
+    position:sticky;
+    top:0;
+    z-index:10;
+    backdrop-filter:saturate(180%) blur(20px);
+    -webkit-backdrop-filter:saturate(180%) blur(20px);
+    background:color-mix(in srgb, var(--bg) 72%, transparent);
+    border-bottom:1px solid var(--divider);
+  }
+  .nav-inner{
+    max-width:980px;
+    margin:0 auto;
+    padding:0 22px;
+    height:48px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .brand{font-size:15px;font-weight:600;letter-spacing:-0.01em;color:var(--text);text-decoration:none}
+  .nav-links{display:flex;gap:28px}
+  .nav-links a{font-size:13px;color:var(--text);text-decoration:none;opacity:0.8}
+  .nav-links a.active{opacity:1;color:var(--accent)}
+  .nav-links a:hover{opacity:1}
+
+  main{max-width:692px;margin:0 auto;padding:0 22px 100px}
+
+  header.page{padding:64px 0 8px}
+  .eyebrow{font-size:13px;color:var(--accent);font-weight:600;margin:0 0 8px}
+  h1{font-size:clamp(32px,6vw,44px);line-height:1.08;font-weight:600;letter-spacing:-0.015em;margin:0 0 12px}
+  .updated{font-size:14px;color:var(--muted);margin:0 0 48px}
+
+  article h2{
+    font-size:22px;
+    font-weight:600;
+    letter-spacing:-0.01em;
+    margin:48px 0 14px;
+  }
+  article p, article li{
+    font-size:16px;
+    line-height:1.65;
+    color:var(--text);
+    margin:0 0 14px;
+  }
+  article ul{margin:0 0 16px;padding-left:20px}
+  article li{margin-bottom:8px}
+  article strong{font-weight:600}
+  article a{color:var(--accent);text-decoration:none}
+  article a:hover{text-decoration:underline}
+
+  .callout{
+    background:var(--surface);
+    border-radius:14px;
+    padding:20px 22px;
+    margin:28px 0;
+  }
+  .callout p{margin:0;font-size:15px;color:var(--muted)}
+
+  hr.section{border:none;border-top:1px solid var(--divider);margin:56px 0 0}
+
+  footer{border-top:1px solid var(--divider);padding:28px 22px 40px}
+  .footer-inner{max-width:980px;margin:0 auto;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;align-items:center}
+  footer p{font-size:12px;color:var(--muted);margin:0}
+  footer a{color:var(--muted);text-decoration:none}
+  footer a:hover{color:var(--text)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="brand" href="index.html">Racmana</a>
+    <div class="nav-links">
+      <a href="privacy.html" class="active">Confidentialité</a>
+      <a href="support.html">Support</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <header class="page">
+    <p class="eyebrow">Légal</p>
+    <h1>Politique de confidentialité</h1>
+    <p class="updated">Dernière mise à jour : septembre 2026</p>
+  </header>
+
+  <article>
+    <p>Cette politique explique quelles données l'application Racmana collecte, comment elles sont utilisées, où elles sont stockées, et les droits dont vous disposez. Racmana est développée et éditée par ABDESSEMED Mohamed.</p>
+
+    <h2>Données que nous collectons</h2>
+    <p>Lorsque vous créez un compte et utilisez Racmana, nous collectons :</p>
+    <ul>
+      <li><strong>Informations de compte</strong> — adresse e-mail, nom d'utilisateur, photo de profil et biographie que vous renseignez.</li>
+      <li><strong>Contenu que vous publiez</strong> — publications, photos, stories, commentaires et messages privés envoyés à d'autres utilisateurs.</li>
+      <li><strong>Données d'interaction</strong> — abonnements, mentions J'aime, signalements que vous effectuez.</li>
+      <li><strong>Données techniques d'appel</strong> — lors d'un appel audio ou vidéo entre utilisateurs, les identifiants nécessaires à l'établissement de la connexion (WebRTC) sont échangés temporairement pour relier les deux appareils.</li>
+    </ul>
+    <p>Racmana ne collecte pas votre position géographique et n'accède pas à vos contacts.</p>
+
+    <h2>Comment ces données sont utilisées</h2>
+    <p>Vos données servent exclusivement à faire fonctionner l'application : afficher votre profil et vos publications aux autres utilisateurs, acheminer vos messages et appels, et vous envoyer des notifications liées à votre activité (mentions J'aime, commentaires, abonnements, messages). Elles ne sont jamais vendues ni partagées avec des annonceurs tiers.</p>
+
+    <h2>Stockage et sécurité</h2>
+    <p>Les données sont hébergées sur l'infrastructure Firebase de Google (Cloud Firestore et Firebase Authentication), avec chiffrement en transit et au repos. L'accès à vos données est protégé par des règles de sécurité qui limitent chaque utilisateur à son propre contenu, à l'exception des informations que vous rendez publiques (profil, publications) ou des cas de modération décrits ci-dessous.</p>
+
+    <h2>Modération et signalements</h2>
+    <p>Racmana permet aux utilisateurs de signaler un contenu ou un compte qu'ils jugent inapproprié. Un signalement inclut le motif choisi et l'identifiant du contenu concerné, et n'est consultable que par l'équipe de modération de Racmana. La personne signalée n'est jamais informée de l'identité de la personne qui l'a signalée. En cas de non-respect répété des règles de la communauté, un compte peut être suspendu.</p>
+
+    <h2>Conservation et suppression</h2>
+    <p>Vous pouvez supprimer votre compte à tout moment depuis <strong>Paramètres → Supprimer mon compte</strong>. Cette action efface définitivement votre profil, vos publications, vos messages et vos données associées de nos serveurs.</p>
+
+    <div class="callout">
+      <p>Racmana est un service gratuit, sans publicité, financé uniquement par les contributions volontaires des utilisateurs.</p>
+    </div>
+
+    <h2>Vos droits</h2>
+    <p>Vous pouvez à tout moment consulter, modifier ou supprimer vos informations personnelles directement dans l'application, sans avoir à nous contacter. Pour toute autre demande relative à vos données, vous pouvez nous écrire à l'adresse indiquée dans la section Contact.</p>
+
+    <h2>Confidentialité des mineurs</h2>
+    <p>Racmana n'est pas destinée aux enfants de moins de 13 ans, et nous ne collectons pas sciemment de données auprès de ce public.</p>
+
+    <h2>Modifications de cette politique</h2>
+    <p>Cette politique peut être mise à jour pour refléter l'évolution de l'application. La date de dernière mise à jour en haut de cette page reflète la version en vigueur.</p>
+
+    <hr class="section">
+
+    <h2>Contact</h2>
+    <p>Pour toute question relative à cette politique ou à vos données personnelles :</p>
+    <ul>
+      <li>Développeur : ABDESSEMED Mohamed</li>
+      <li>E-mail : <a href="mailto:contact@racmana.app">contact@racmana.app</a></li>
+    </ul>
+  </article>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <p>© 2026 ABDESSEMED Mohamed. Tous droits réservés.</p>
+    <p><a href="index.html">Retour à l'accueil</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
