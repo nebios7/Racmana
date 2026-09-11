@@ -52,11 +52,21 @@
     justify-content:space-between;
   }
   .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
     font-size:15px;
     font-weight:600;
     letter-spacing:-0.01em;
     color:var(--text);
     text-decoration:none;
+  }
+  .brand-icon{
+    width:28px;
+    height:28px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
   }
   .nav-links{display:flex;gap:28px}
   .nav-links a{
@@ -140,7 +150,15 @@
 
 <nav>
   <div class="nav-inner">
-    <a class="brand" href="index.html">Racmana</a>
+    <a class="brand" href="index.html">
+      <svg class="brand-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Première bulle -->
+        <path d="M3 10C3 6.686 5.686 4 9 4H13C16.314 4 19 6.686 19 10C19 13.314 16.314 16 13 16H12V18.5C12 19.881 10.881 21 9.5 21C8.119 21 7 19.881 7 18.5V16H6C3.686 16 3 13.314 3 10Z" fill="#0071e3"/>
+        <!-- Deuxième bulle -->
+        <path d="M13 8C13 6.343 14.343 5 16 5H19C21.657 5 23 6.343 23 8C23 10.209 21.657 12 19 12H18V14C18 15.105 17.105 16 16 16C14.895 16 14 15.105 14 14V12H13C10.343 12 13 10.209 13 8Z" fill="#0071e3" opacity="0.8"/>
+      </svg>
+      Racmana
+    </a>
     <div class="nav-links">
       <a href="terms.html">CGU</a>
       <a href="privacy.html">Confidentialité</a>
